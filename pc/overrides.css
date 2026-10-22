@@ -1,0 +1,19 @@
+/* Fixes where the site stylesheets meet the page figures. Loaded last. */
+/* The site's unlayered resets (e.g. svg { display: block }) outrank the page's layered utilities.
+   Restore the few responsive display utilities the figures rely on. */
+.hidden { display: none !important; }
+@media (min-width: 640px) {
+  .sm\:block { display: block !important; }
+  .sm\:hidden { display: none !important; }
+  .sm\:inline { display: inline !important; }
+}
+@media (min-width: 1024px) {
+  .lg\:block { display: block !important; }
+  .lg\:hidden { display: none !important; }
+}
+/* Rules figure: on phones the pinned figure is short, so show the rule names only. */
+@media (max-width: 639px) {
+  .pc-rules p { display: none; }
+  .pc-rules h3 { font-size: 20px; }
+  .pc-rules li { padding: 10px 0; }
+}

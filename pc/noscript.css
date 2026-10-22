@@ -1,0 +1,2 @@
+/* The site's no-JavaScript menu fallback, copied from pacificcompute.org (21 Oct 2026). Loaded only inside <noscript>. */
+@media (max-width: 850px) { .masthead { height: auto; } .masthead-inner { flex-wrap: wrap; padding-block: 20px; } .menu-toggle { display: none; } .main-nav { display: flex; position: static; flex-wrap: wrap; padding: 0; width: 100%; gap: 6px 20px; border: 0; box-shadow: none; } }
